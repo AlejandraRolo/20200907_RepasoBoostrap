@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso Boostrap</title>
+    <meta name="authors" content="Yazmín Alejandra Rodriguez">
+  
+    <link rel="styleSheet" href="./assets/css/bootstrap_4.5.2.min.css" type="text/css">
+    <link rel="styleSheet" href="./assets/css/index.css" type="text/css">
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col propia bg-primary">Hola1</div>
+            <div class="col propia bg-success">Hola2</div>
+            <div class="col propia bg-warning">Hola3</div>
+            <div class="col propia bg-dark text-white">Hola4</div>
+            <div class="col propia bg-danger">Hola5</div>
+        </div>
+    </div>
+
+    <!-- Ejercicio 2 -->
+    <div class="container">
+        <h3>Maquetación</h3>
+        <div class="row">
+            <!-- 
+                No olvidar colocar la clase d-flez
+                justify-content-center: alinear horizontalmente 
+                align-items-center: alinear verticalmente
+            -->
+            <div class="col-12 bg-primary header d-flex justify-content-center align-items-center">Header</div>
+            <div class="col-12 container-sm col-md-9 col-lg-8 col-xl-10 bg-danger main">Main</div>
+            <div class="col-12 container-sm col-md-3 col-lg-4 col-xl-2 bg-warning aside">Aside</div>
+            <div class="col-12 bg-success footer">Footer</div>
+        </div>
+    </div>
+
+    <!-- Ejercicio 3 - Responsive -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-4 propia-dos bg-primary">Hola1</div>
+            <div class="col-12 col-md-4 col-lg-6 col-xl-8 propia-dos bg-success">Hola2</div>
+        </div>
+    </div>
+
+     <!-- Ejercicio 4 - Componenete Flex en CSS -->
+     <div class="container">
+        <h3>Utilizando clase con display flex en CSS</h3>
+         <div class="padre">
+             <div class="divsito bg-primary"></div>
+             <div class="divsito bg-success"></div>
+         </div>
+     </div>
+
+     <!-- Ejercicio 4 - Componenete Flex en CSS -->
+     <div class="container">
+        <h3>Utilizando Flex de boostrap</h3>
+         <div class="d-flex justify-content-between fondo align-items-center">
+             <div class="divsito bg-primary align-self-start">Primary</div>
+             <div class="divsito bg-dark text-white align-self-end">dark</div>
+             <div class="divsito bg-success">success</div>
+         </div>
+         <hr>
+         <div class="d-flex flex-column justify-content-between fondo align-items-end">
+            <div class="divsito bg-danger align-self-start">danger</div>
+            <div class="divsito bg-warning">warning</div>
+        </div>
+     </div>
+
+     <hr>
+     <div class="container fondo-claro">
+        <h3>Ejercicio Maquetación</h3>
+        <div class="row mb-3">
+            <div class="col-12 header-dos p-3 text-white">
+                <h2>Header</h2>
+                <span>Columnas 12</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12 col-md-8 col-lg-8 articulo mb-3 p-3">
+                <h3>Artículo</h3>
+                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, omnis! Quisquam doloribus quis nulla quod minima laborum eaque, expedita, eius, facere asperiores magnam consectetur quas assumenda ipsa nesciunt atque cumque.</p>
+                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, omnis! Quisquam doloribus quis nulla quod minima laborum eaque, expedita, eius, facere asperiores magnam consectetur quas assumenda ipsa nesciunt atque cumque.</p>
+                <span class="d-sm-none d-md-block">Columnas 8</span>
+                <span class="d-md-none">Columnas 12</span>
+            </div>
+            <!--
+                align-self-center: centrar el contenedor hijo sobre le padre
+                justify-content-center: centra sobre le eje principal
+                align-items-center: centra sobre le eje cruzado
+            -->
+            <div class="col-sm-12 col-md-4 col-lg-4 sidebar align-self-center d-flex flex-column justify-content-center align-items-center">
+                <h3>Sidebar</h3>
+                <span class="d-sm-none d-md-block"><b>Columnas 4</b></span>
+                <span class="d-md-none"><b>Columnas 12</b></span>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-3 col-lg-3 widget mb-3  d-flex d-flex flex-column justify-content-center align-items-center">
+                <h3>widget</h3>
+                <span class="d-sm-none d-md-block"><b>Columnas 3</b></span>
+                <span class="d-md-none"><b>Columnas 12</b></span>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 widget mb-3  d-flex d-flex flex-column justify-content-center align-items-center">
+                <h3>widget</h3>
+                <span class="d-sm-none d-md-block"><b>Columnas 3</b></span>
+                <span class="d-md-none"><b>Columnas 12</b></span>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 widget mb-3  d-flex d-flex flex-column justify-content-center align-items-center">
+                <h3>widget</h3>
+                <span class="d-sm-none d-md-block"><b>Columnas 3</b></span>
+                <span class="d-md-none"><b>Columnas 12</b></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer-dos p-3">
+                <h4>footer</h4>
+                <span>Columnas 12</span>
+            </div>
+        </div>
+     </div>
+
+    <!-- Se linkea de forma externa -->
+    <script src="./assets/js/jquery_3.5.1.min.js"></script>  <!--Va primero Jquery-->
+    <script src="./assets/js/popper_1.16.1.min.js"></script>
+    <script src="./assets/js/bootstrap_4.52.min.js"></script>
+    <script src="./assets/js/index.js"></script> <!--Conectamos la hoja de estilos-->
+</body>
+</html>
